@@ -1,0 +1,92 @@
+body
+{
+    perspective: 1000px;
+}
+.button
+{
+    width: 150px;
+    height: 50px;
+    background-color: inherit;
+    color: black;
+    border: 1px solid;
+    transform-style: preserve-3d;
+    transition: all ease-in-out .5s;
+    position: center center;
+    margin: 40%;
+}
+.button:hover
+{
+    animation: swing 1s infinite ease-in-out;  
+}
+@keyframes swing
+{
+    0% {
+        transform: skewY(-20deg);   
+     }
+    20% {
+        transform: skewY(20deg);
+        }
+    40% {
+        transform: skewY(-10deg);   
+     }
+    60% {
+        transform: skewY(10deg);
+    }
+    80% {
+    
+        transform: skewY(-10deg);   
+     }
+    100% {
+        transform: skewY(0deg);
+        }
+}
+
+.first-col
+{
+    background-color: coral;
+    height: 600px;
+}
+.second-col
+{
+    background-color: cornsilk;
+    height: 600px;  
+}
+.third-col
+{
+    background-color: darkcyan;
+    height: 600px; 
+}
+
+/******************************************
+.a7a
+{
+    animation-name: moving;
+
+    animation-duration: 2s;
+
+    animation-delay: 5s;
+
+    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
+
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+
+    animation-fill-mode: forwards;   /دي بتخلي لانيميشن تقف عند اخر خطوه عملتها/
+    animation-fill-mode: backwards; /* بيخلي الانيميشن الاولي تتعمل قبل الديلاي  وبعد ما بيخلص بيخليه يرجع للاصل من غير انيميشن/
+    animation-fill-mode: both; /*بيعمل الاتنين مع بعض/
+
+    animation-play-state: running;
+    animation-play-state: paused;
+
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+
+
+    animation: name duration timing-function delay iteration-count direction fill-mode play-srate;
+
+
+
+    }
+
